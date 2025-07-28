@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f3e7fe, #d6f0ff);
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a148c;
+}
+
+.book-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.book {
+  padding: 20px;
+  background: linear-gradient(to bottom right, #f3e5f5, #e1f5fe);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+.book-title {
+  font-size: 1.5rem;
+  color: #4a148c;
+}
+
+.book-author {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    flex-direction: row;
+  }
+
+  .input {
+    flex: 1;
+  }
+}
