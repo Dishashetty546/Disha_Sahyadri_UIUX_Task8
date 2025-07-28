@@ -102,15 +102,15 @@ This full-stack application enhances the book management system by enabling **re
 
 ---
 
-### 1. 📖 Book List UI (Before Adding)
+### 1. Database
 
 ![Database on MongoDB](./Screenshots/databaseDeploy.png)
 
-### 2. 📝 Add Book Form
+### 2. Frontend deployed on vercel
 
 ![Frontend Deployed on Vercel](./Screenshots/vercel.PNG)
 
-### 3. ⚡ Real-Time Update in Action
+### 3. Backend deployed on Render
 
 ![Backend Deployed on Render](./Screenshots/Render.PNG)
 
