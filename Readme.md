@@ -6,6 +6,11 @@
 
 ---
 
+## 🔗 Live Links
+
+- **Frontend (React):** [https://disha-sahyadri-uiux-task8.vercel.app](https://disha-sahyadri-uiux-task8.vercel.app)
+- **Backend (Express + MongoDB + Socket.IO):** [https://disha-sahyadri-uiux-task8.onrender.com](https://disha-sahyadri-uiux-task8.onrender.com)
+
 ## 📝 Overview
 
 ![Logo](./Screenshots/logo.png)
