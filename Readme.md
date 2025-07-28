@@ -1,4 +1,4 @@
-# 📚 Real-Time Book Management App — React Developers Task 8
+# 📚 Real-Time Book Management App — UI/UX - Task 8
 
 **Candidate Name:** Disha Shetty  
 **College:** Sahyadri College of Engineering & Management  
