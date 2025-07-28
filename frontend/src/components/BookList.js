@@ -3,7 +3,8 @@ import { io } from "socket.io-client";
 import axios from "axios";
 import "../style/BookList.css";
 
-const socket = io("http://localhost:5000");
+// 👉 Use the deployed backend URL (not localhost)
+const socket = io("https://disha-sahyadri-uiux-task8.onrender.com");
 
 export default function BookList() {
   const [books, setBooks] = useState([]);
@@ -32,7 +33,9 @@ export default function BookList() {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/books");
+      const response = await axios.get(
+        "https://disha-sahyadri-uiux-task8.onrender.com/books"
+      );
       setBooks(response.data);
     } catch (error) {
       console.error("Error fetching books:", error);
@@ -42,7 +45,10 @@ export default function BookList() {
   const handleAddBook = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/books", newBook);
+      await axios.post(
+        "https://disha-sahyadri-uiux-task8.onrender.com/books",
+        newBook
+      );
       setNewBook({ title: "", author: "" });
     } catch (error) {
       console.error("Error adding book:", error);
