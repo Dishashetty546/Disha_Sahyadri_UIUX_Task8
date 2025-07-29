@@ -1,8 +1,10 @@
 # 📚 Real-Time Book Management App — UI/UX - Task 8
 
-**Candidate Name:** Disha shetty
+**Name:** Disha  
 **College:** Sahyadri College of Engineering & Management  
-**Internship Task:** MatreComm – (Task 8)
+**Domain:** UI/UX  
+**Task:** 8 – Real-Time Task Management App
+
 
 ---
 
