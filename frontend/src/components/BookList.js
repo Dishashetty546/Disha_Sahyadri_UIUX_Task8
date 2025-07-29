@@ -3,7 +3,10 @@ import { io } from "socket.io-client";
 import axios from "axios";
 import "../style/BookList.css";
 
-const socket = io("http://localhost:5000");
+const BACKEND_URL =
+  process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
+const socket = io(BACKEND_URL);
 
 export default function BookList() {
   const [books, setBooks] = useState([]);
@@ -32,7 +35,7 @@ export default function BookList() {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/books");
+      const response = await axios.get(`${BACKEND_URL}/books`);
       setBooks(response.data);
     } catch (error) {
       console.error("Error fetching books:", error);
@@ -42,7 +45,7 @@ export default function BookList() {
   const handleAddBook = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/books", newBook);
+      await axios.post(`${BACKEND_URL}/books`, newBook);
       setNewBook({ title: "", author: "" });
     } catch (error) {
       console.error("Error adding book:", error);
